@@ -1,0 +1,39 @@
+```python
+# 1. Create two sets
+frontend = {"Asha", "Rahul", "Anu", "Vishnu"}
+backend = {"Rahul", "Anu", "Arun", "Kiran"}
+
+# 2. Add a new student to the Backend course
+backend.add("Neha")
+
+# 3. Remove a student from the Frontend course
+frontend.remove("Vishnu")
+
+# 4. Display students enrolled in both courses
+print("Students in both courses:", frontend.intersection(backend))
+
+# 5. Display students enrolled only in Backend
+print("Students only in Backend:", backend.difference(frontend))
+
+# 6. Display the total number of unique students
+all_students = frontend.union(backend)
+print("Total unique students:", len(all_students))
+
+# 7. Create a dictionary with course names and student counts
+courses = {
+    "Frontend": len(frontend),
+    "Backend": len(backend)
+}
+
+# 8. Print each course name and its student count using a loop
+for course, count in courses.items():
+    print(f"Course: {course}, Students: {count}")
+
+# 9. Add Fullstack using dictionary comprehension
+courses_with_fullstack = {
+    course: count for course, count in courses.items()
+}
+courses_with_fullstack["Fullstack"] = sum(courses.values())
+
+print("Updated course dictionary:", courses_with_fullstack)
+```
