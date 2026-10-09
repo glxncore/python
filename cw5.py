@@ -1,4 +1,4 @@
-```python
+
 # 1. Create two sets
 python_students = {"Asha", "Rahul", "Anu"}
 data_science_students = {"Rahul", "Anu", "Arun"}
@@ -38,4 +38,3 @@ expected_growth = {
 }
 
 print("Expected growth:", expected_growth)
-```
