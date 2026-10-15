@@ -37,3 +37,21 @@ first_participants = (
 )
 
 print(first_participants)
+
+
+
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print("My name is {}. I am {} years old.".format(self.name,self.age))
+
+stud1 = Student('Kevin', 26)
+stud2 = Student('Reshma', 23)
+
+stud1.info()  # Student.intro(stud1) 
+stud2.info()  # Student.intro(stud2)
